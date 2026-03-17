@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!--
+      Mask for G: hides the strip where M's right leg passes in front,
+      creating the interlocked / overlapping monogram look.
+    -->
+    <mask id="gMask">
+      <rect width="100" height="100" fill="white"/>
+      <!-- M's right vertical leg (approx x 44-57, full height) -->
+      <rect x="44" y="5" width="14" height="82" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- G drawn FIRST (partially behind M's right leg via mask) -->
+  <text
+    x="36"
+    y="78"
+    mask="url(#gMask)"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-size="78"
+    font-weight="900"
+    fill="#3B82F6"
+  >G</text>
+
+  <!-- M drawn ON TOP (fully visible, in front of G) -->
+  <text
+    x="2"
+    y="78"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-size="78"
+    font-weight="900"
+    fill="#3B82F6"
+  >M</text>
+</svg>
